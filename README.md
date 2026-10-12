@@ -2,8 +2,9 @@
 
 A mixed reality brain anatomy game for Meta Quest. Players are guided through a series of goals, each asking them to find and touch a specific region of a 3D brain model, using hand tracking or Touch controllers.
 
-Built in Unity 6 with the XR Interaction Toolkit and Universal Render Pipeline.
+Built in Unity 6 with the XR Interaction Toolkit and Universal Render Pipeline. Three and 1/2 year development period starting in 2023. Beta release.
 
+![Status: Beta](https://img.shields.io/badge/status-beta-orange)
 ---
 
 ## How it plays
