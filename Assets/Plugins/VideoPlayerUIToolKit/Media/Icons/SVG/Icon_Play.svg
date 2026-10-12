@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.08 19.08">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path id="Icon_awesome-play" data-name="Icon awesome-play" class="cls-1" d="M16.97,8.01L3.92,.3C3.09-.2,2,.07,1.49,.9c-.17,.28-.26,.6-.25,.93v15.42c0,.98,.79,1.78,1.78,1.78,.32,0,.63-.09,.91-.25l13.04-7.71c.85-.5,1.13-1.59,.63-2.43-.15-.26-.37-.47-.63-.63h0Z"/>
+      <rect class="cls-2" width="19.08" height="19.08"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: cb4313ea09d6df343a2053eae6a56b18
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 268096
+  packageName: UIToolKit Video Player
+  packageVersion: 1.1.0
+  assetPath: Assets/Plugins/VideoPlayerUIToolKit/Scripts/VideoController.cs
+  uploadId: 658974

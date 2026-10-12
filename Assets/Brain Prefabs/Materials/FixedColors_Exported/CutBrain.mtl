@@ -1,0 +1,103 @@
+newmtl Diffuse_WholeBrain:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Color_Map_2.png
+Ni 1.00
+newmtl Diffuse_WholeBrain:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Color_Map_2.png
+Ni 1.00
+newmtl Diffuse_WholeBrain:lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Color_Map_3.png
+Ni 1.00
+newmtl Diffuse_WholeBrain:lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Color_Map_1.png
+Ni 1.00
+newmtl Diffuse_WholeBrain:lambert9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Color_Map_1.png
+Ni 1.00
+newmtl Diffuse_WholeBrain:lambert10SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Color_Map_1.png
+Ni 1.00
+newmtl Diffuse_WholeBrain:lambert11SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Color_Map_2.png
+Ni 1.00
+newmtl Diffuse_WholeBrain:lambert12SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Color_Map_1.png
+Ni 1.00
+newmtl Diffuse_WholeBrain:lambert13SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Color_Map_2.png
+Ni 1.00
+newmtl Diffuse_WholeBrain:lambert14SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Color_Map_1.png
+Ni 1.00
+newmtl Diffuse_WholeBrain:lambert15SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Color_Map_3.png
+Ni 1.00
+newmtl Diffuse_WholeBrain:lambert17SG
+illum 4
+Kd 0.67 0.55 0.55
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd -s_0.25_0.333333_CoronalSliceStand-In.jpeg
+Ni 1.00
+newmtl lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd -s_0.333333_0.25_CoronalSliceStand-In.jpeg
+Ni 1.00

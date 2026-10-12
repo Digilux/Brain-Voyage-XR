@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.61 14.61">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path id="Icon_map-expand" data-name="Icon map-expand" class="cls-1" d="M12.94,6.35h-4.37V1.81L9.84,.14V2.92L12.94,0l1.66,1.81-2.78,2.95h2.79l-1.67,1.59ZM1.67,8.26H6.2v4.54l-1.27,1.67v-2.79l-3.18,2.93L.05,12.8l2.74-2.95H0l1.67-1.59Z"/>
+  </g>
+</svg>

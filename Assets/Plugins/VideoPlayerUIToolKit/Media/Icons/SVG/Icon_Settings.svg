@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.05 16.18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path id="Icon_material-more-vert" data-name="Icon material-more-vert" class="cls-1" d="M2.02,4.05c1.12,0,2.02-.91,2.02-2.02S3.14,0,2.02,0,0,.91,0,2.02c0,1.12,.91,2.02,2.02,2.02Zm0,2.02C.91,6.07,0,6.97,0,8.09,0,9.21,.91,10.12,2.02,10.12s2.02-.91,2.02-2.02c0-1.12-.91-2.02-2.02-2.02Zm0,6.07C.91,12.14,0,13.04,0,14.16,0,15.28,.91,16.18,2.02,16.18s2.02-.91,2.02-2.02c0-1.12-.91-2.02-2.02-2.02h0Z"/>
+  </g>
+</svg>

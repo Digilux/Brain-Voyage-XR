@@ -1,0 +1,17 @@
+.button-control {
+    -unity-background-scale-mode: scale-to-fit;
+    background-color: rgba(255, 255, 255, 0);
+    width: 50px;
+    height: 50px;
+    align-self: auto;
+    flex-shrink: 1;
+    flex-grow: 1;
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+}
+
+.button-control-video-expand {
+    position: absolute;
+}

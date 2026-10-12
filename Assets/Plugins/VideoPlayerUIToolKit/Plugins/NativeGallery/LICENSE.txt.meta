@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8c01669b685e3c74f91ced9db30080be
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 268096
+  packageName: UIToolKit Video Player
+  packageVersion: 1.1.0
+  assetPath: Assets/Plugins/VideoPlayerUIToolKit/Plugins/NativeGallery/LICENSE.txt
+  uploadId: 658974

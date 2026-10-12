@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2cda990e2423bbf4892e6590ba056729
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 268096
+  packageName: UIToolKit Video Player
+  packageVersion: 1.1.0
+  assetPath: Assets/Plugins/VideoPlayerUIToolKit/Scenes/Demo_VideoPlayer.unity
+  uploadId: 658974

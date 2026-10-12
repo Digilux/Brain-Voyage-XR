@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 67aa3548613c27146a2c86855400648b
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 12388, guid: 0000000000000000e000000000000000, type: 0}
+  disableValidation: 0
+AssetOrigin:
+  serializedVersion: 1
+  productId: 268096
+  packageName: UIToolKit Video Player
+  packageVersion: 1.1.0
+  assetPath: Assets/Plugins/VideoPlayerUIToolKit/UI Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss
+  uploadId: 658974

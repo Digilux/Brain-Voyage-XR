@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f2305c6f775744f49ba6b57e532369c9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 268096
+  packageName: UIToolKit Video Player
+  packageVersion: 1.1.0
+  assetPath: Assets/Plugins/VideoPlayerUIToolKit/Scripts/VideoRenderTextureUI.cs
+  uploadId: 658974

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.45 16.29">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path id="Icon_metro-volume-mute2" data-name="Icon metro-volume-mute2" class="cls-1" d="M17.45,10.09v1.54h-1.54l-1.95-1.95-1.95,1.95h-1.54v-1.54l1.95-1.95-1.95-1.95v-1.54h1.54l1.95,1.95,1.95-1.95h1.54v1.54l-1.95,1.95,1.95,1.95Zm-9.89,6.2c-.15,0-.3-.06-.41-.17L2.67,11.64H.58C.26,11.64,0,11.38,0,11.05V5.24c0-.32,.26-.58,.58-.58H2.67L7.15,.17c.23-.23,.6-.23,.82,0,.11,.11,.17,.26,.17,.41V15.71c0,.32-.26,.58-.58,.58h0Z"/>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 6f061770d897d9940b53cbfb589c72f2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ButtonPlayOrPause: {fileID: 3032334164665928405, guid: 66d40221d132d04499855da9ce315f20, type: 3}
+  - m_Slider: {instanceID: 0}
+  - m_IconPlay: {fileID: 996995359, guid: 947058cdb6ae2458cb36de45bfc27b62, type: 3}
+  - m_IconPause: {fileID: 433717060, guid: 947058cdb6ae2458cb36de45bfc27b62, type: 3}
+  - m_ButtonPlayOrPauseIcon: {instanceID: 0}
+  - m_VideoTimeText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 18f9b62646440934b8f78145c5b2d57b
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 268096
+  packageName: UIToolKit Video Player
+  packageVersion: 1.1.0
+  assetPath: Assets/Plugins/VideoPlayerUIToolKit/Documentation.pdf
+  uploadId: 658974
