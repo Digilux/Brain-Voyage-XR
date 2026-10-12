@@ -119,6 +119,7 @@ UI scripts are prefixed with `UI_` (timer, attempt counter, score display, leade
 ## Credits
 
 Developed at Professor Alex M. Lee at Arizona State University and Dr. Lauren Petley at Clarkson University.
+
 Secondary developers include: Bo Li, Shreyak Duggirala, Hemanthsai Konatham, Jack Rich.
 
 More information can be found on our website: https://webspace.clarkson.edu/projects/HAL/public_html/BVXR_index.html
