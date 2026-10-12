@@ -118,7 +118,7 @@ UI scripts are prefixed with `UI_` (timer, attempt counter, score display, leade
 
 ## Credits
 
-Developed at Professor Alex M. Lee at Arizona State University and Dr. Lauren Petley at Clarkson University.
+Developed by Professor Alex M. Lee at Arizona State University and Dr. Lauren Petley at Clarkson University.
 
 Secondary developers include: Bo Li, Shreyak Duggirala, Hemanthsai Konatham, Jack Rich.
 
