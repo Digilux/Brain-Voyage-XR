@@ -124,6 +124,9 @@ Secondary developers include: Bo Li, Shreyak Duggirala, Hemanthsai Konatham, Jac
 
 More information can be found on our website: https://webspace.clarkson.edu/projects/HAL/public_html/BVXR_index.html
 
+
+## License
+
 MIT License
 
 
