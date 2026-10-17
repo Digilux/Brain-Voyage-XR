@@ -72,9 +72,5 @@ public class ResetButton : MonoBehaviour
         }
     }
 
-    internal void ResetSlices()
-    {
-        throw new NotImplementedException();
-    }
 
 }

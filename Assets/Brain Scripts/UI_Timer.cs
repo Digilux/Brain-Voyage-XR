@@ -114,6 +114,13 @@ public class UI_Timer : MonoBehaviour
         UpdateUI();
     }
 
+    /// <summary>Continue counting from the current elapsed time (no reset).</summary>
+    public void Resume()
+    {
+        if (running) return;
+        running = true;
+    }
+
     /// <summary>Clear the auto-stop latch so goal-based auto-stop can fire again.</summary>
     public void ResetStopLatch()
     {
@@ -137,8 +144,7 @@ public class UI_Timer : MonoBehaviour
             timerText.text = $"{m:00}:{s:00}";
         }
 
-        if (running && Time.frameCount % 30 == 0)
-            Debug.Log($"[UI_Timer] running, elapsed={Elapsed:0.00}");
+        
     }
 
     private void Hide()

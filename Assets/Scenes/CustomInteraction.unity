@@ -13787,6 +13787,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   label: {fileID: 505477598}
+  rootToHide: {fileID: 0}
+  showInReleaseBuilds: 0
+  appendMode: 0
+  maxLines: 12
 --- !u!114 &505477598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36692,7 +36696,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1315427335
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36819,6 +36823,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   label: {fileID: 1315427336}
+  rootToHide: {fileID: 1315427334}
+  showInReleaseBuilds: 0
+  appendMode: 0
+  maxLines: 12
 --- !u!23 &1315427338
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44725,6 +44733,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562915437}
   m_CullTransparentMesh: 0
+--- !u!1 &1564487848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1564487850}
+  - component: {fileID: 1564487849}
+  m_Layer: 0
+  m_Name: AppPauseHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1564487849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564487848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 529f87a8b4defc546b71fb9e5c5a49e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseTimeScale: 1
+  pauseAudio: 1
+  pauseVideo: 1
+  pausedOverlay: {fileID: 0}
+  activeInEditor: 0
+  logToVRDebug: 1
+  useUserPresence: 1
+--- !u!4 &1564487850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564487848}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.00075190514, y: 1.4074525, z: 0.5685914}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1574928237
 GameObject:
   m_ObjectHideFlags: 0
@@ -78646,3 +78705,4 @@ SceneRoots:
   - {fileID: 1839328950}
   - {fileID: 166893258}
   - {fileID: 1299951297}
+  - {fileID: 1564487850}

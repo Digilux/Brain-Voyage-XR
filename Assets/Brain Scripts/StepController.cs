@@ -9,6 +9,7 @@ public class StepController : MonoBehaviour
 {
 
     public static bool GlobalDetectionPaused = false;
+    public static bool AppPaused = false;   // set by AppPauseHandler
     public event System.Action<StepController, bool> OnStepFinished;   
     public GameObject startButton; // blue button
 
@@ -282,7 +283,7 @@ public class StepController : MonoBehaviour
     private void Update()
     {
         // global pause so goal detection isn't triggered
-        if (GlobalDetectionPaused || !watching || !fingerService)
+        if (GlobalDetectionPaused || AppPaused || !watching || !fingerService)
             return;
 
         var selectionSource = fingerService.GetGoalSelectionSource(requiredCommonTag);
@@ -393,6 +394,7 @@ public class StepController : MonoBehaviour
     private void HandleWrongTwoFingerTouch(Collider wrongCollider)
     {
         if (Time.unscaledTime < wrongTouchGraceEndTime) return;
+        if (AppPaused) return;
         // Add IsShowingFeedback check to existing guards
         if (!stepRunning || stepCompleted) return;
         if (wrongTouchDetector && !wrongTouchDetector.IsArmed) return;
