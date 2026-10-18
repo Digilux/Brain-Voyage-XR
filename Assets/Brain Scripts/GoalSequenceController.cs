@@ -33,22 +33,33 @@ public class GoalSequenceController : MonoBehaviour
     [SerializeField] private Button nextGoalButtonGoalCanvas;
     [SerializeField] private Button nextGoalButtonFailCanvas;
 
-    [Header("Final State")]
-    [SerializeField] private GameObject finalCanvas;   // assign a "All goals complete" canvas here
-
-    [SerializeField] private UI_Timer sessionTimer;
+    [Header("FINAL CANVAS  (appears after the last goal)")]
+    [Tooltip("Root of the Final Canvas.")]
+    [SerializeField] private GameObject finalCanvas;
+    [Tooltip("Final Canvas → the TIME number (e.g. UI Timer Digits).")]
     [SerializeField] private TMP_Text finalTimeText;
+    [Tooltip("Final Canvas → the SCORE number (e.g. UI Score Digits).")]
+    [SerializeField] private TMP_Text finalScoreText;
 
-    [SerializeField] private GameObject scoreCanvas;   // your new canvas root
-    [SerializeField] private TMP_Text scoreText;       // TMP text on that canvas
+    [Header("HIGH SCORE CANVAS  (initials + leaderboard)")]
+    [Tooltip("Root of the High Score Canvas.")]
+    [SerializeField] private GameObject scoreCanvas;
+    [Tooltip("High Score Canvas → the player's SCORE text (shows \"Score: 123\").")]
+    [SerializeField] private TMP_Text scoreText;
+    [Tooltip("High Score Canvas → the player's TIME text. Optional: leave as None to skip.")]
+    [SerializeField] private TMP_Text scoreCanvasTimeText;
+    [Tooltip("High Score Canvas → the leaderboard list.")]
+    [SerializeField] private UI_HighScoreDisplay highScoreDisplay;
+    [Tooltip("High Score Canvas → the initials entry panel.")]
+    [SerializeField] private UI_InitialsInput initialsInput;
+
+    [Header("SESSION DATA  (sources, not displays)")]
+    [Tooltip("The timer that measures the whole session.")]
+    [SerializeField] private UI_Timer sessionTimer;
     [SerializeField] private ScoreManager scoreManager;
 
-    [Header("High Score")]
-    [SerializeField] private UI_HighScoreDisplay highScoreDisplay;
-
+    [Header("Setup")]
     [SerializeField] private bool autoFindSteps = false;
-
-    [SerializeField] private UI_InitialsInput initialsInput;
 
     private string currentDifficulty = "";  // ADD: tracks difficulty for leaderboard filtering
     public void StartEasy() { currentDifficulty = "Easy"; StartSequence(6, 5); }
@@ -217,11 +228,13 @@ public class GoalSequenceController : MonoBehaviour
         {
             if (sessionTimer) sessionTimer.Stop();
 
-            if (finalTimeText && sessionTimer)
-                finalTimeText.text = sessionTimer.GetFormattedTime();
+            RefreshResultTexts();
 
-            if (scoreText && ScoreManager.Instance)
-                scoreText.text = $"Score: {ScoreManager.Instance.TotalScore}";
+            //if (finalTimeText && sessionTimer)
+            //    finalTimeText.text = sessionTimer.GetFormattedTime();
+
+            //if (scoreText && ScoreManager.Instance)
+            //    scoreText.text = $"Score: {ScoreManager.Instance.TotalScore}";
 
             if (finalCanvas)
                 finalCanvas.SetActive(true);
@@ -283,8 +296,9 @@ public class GoalSequenceController : MonoBehaviour
     {
         //VRDebugText.Log($"ShowScore called | manager={scoreManager != null} | score={scoreManager?.TotalScore}");
 
-        if (scoreText && scoreManager)
-            scoreText.text = $"Score: {scoreManager.TotalScore}";
+        RefreshResultTexts();
+        //if (scoreText && scoreManager)
+        //    scoreText.text = $"Score: {scoreManager.TotalScore}";
 
         // Filter the leaderboard to match the difficulty just played
         if (highScoreDisplay)
@@ -293,10 +307,17 @@ public class GoalSequenceController : MonoBehaviour
         if (scoreCanvas) scoreCanvas.SetActive(true);
         if (finalCanvas) finalCanvas.SetActive(false);
 
-        finalTimeText.text = sessionTimer.GetFormattedTime();
+    }
 
-        if (finalTimeText && sessionTimer)
-            finalTimeText.text = sessionTimer.GetFormattedTime();
+    private void RefreshResultTexts()
+    {
+        int total = ScoreManager.Instance ? ScoreManager.Instance.TotalScore : 0;
+        string time = sessionTimer ? sessionTimer.GetFormattedTime() : "00:00";
+
+        if (finalScoreText) finalScoreText.text = total.ToString();
+        if (finalTimeText) finalTimeText.text = time;
+        if (scoreText) scoreText.text = total.ToString();
+        if (scoreCanvasTimeText) scoreCanvasTimeText.text = time;
     }
     public void OpenInitialsInput()
     {

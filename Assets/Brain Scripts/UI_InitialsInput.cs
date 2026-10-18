@@ -13,6 +13,7 @@ public class UI_InitialsInput : MonoBehaviour
     [SerializeField] private GoalSequenceController goalSequence;
 
     private string difficultyToSubmit = "";
+    private bool submitted;   // one submission per session
     private void Awake()
     {
         initialsField.characterLimit = 3;
@@ -52,13 +53,20 @@ public class UI_InitialsInput : MonoBehaviour
     {
         scoreToSubmit = score;
         difficultyToSubmit = difficulty;
+        submitted = false;
+        if (submitButton) submitButton.gameObject.SetActive(true);
         gameObject.SetActive(true);
     }
 
     private void OnSubmit()
     {
+        if (submitted) return;
+
         string initials = initialsField.text.Trim();
         if (initials.Length == 0) return;
+
+        submitted = true;
+        if (submitButton) submitButton.gameObject.SetActive(false);
 
         if (keyboard) keyboard.Hide();
         HighScoreManager.Instance?.SubmitScore(scoreToSubmit, initials, difficultyToSubmit);

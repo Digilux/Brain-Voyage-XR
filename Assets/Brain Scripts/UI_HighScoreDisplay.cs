@@ -10,6 +10,10 @@ public class UI_HighScoreDisplay : MonoBehaviour
 
     private string filterDifficulty = "";  // empty = show all
 
+    [Header("Headers")]
+    [Tooltip("Header when no difficulty filter is set.")]
+    [SerializeField] private string allScoresHeader = "All Scores";
+
     private void Awake()
     {
         if (!scoresText) scoresText = GetComponent<TMP_Text>();

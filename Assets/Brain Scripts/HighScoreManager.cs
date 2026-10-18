@@ -41,8 +41,10 @@ public class HighScoreManager : MonoBehaviour
             difficulty = difficulty        // ADD THIS
         };
 
-        Entries.Add(entry);
-        Entries.Sort((a, b) => b.score.CompareTo(a.score));
+        // Insert above the first score that's equal or lower, so the newest entry wins ties
+        int index = Entries.FindIndex(e => e.score <= score);
+        if (index < 0) index = Entries.Count;
+        Entries.Insert(index, entry);
         if (Entries.Count > maxEntries)
             Entries.RemoveRange(maxEntries, Entries.Count - maxEntries);
 
