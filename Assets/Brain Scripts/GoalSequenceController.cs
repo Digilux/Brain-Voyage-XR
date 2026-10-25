@@ -323,6 +323,10 @@ public class GoalSequenceController : MonoBehaviour
     {
         //VRDebugText.Log($"OpenInitialsInput called | initialsInput={initialsInput != null} | score={ScoreManager.Instance?.TotalScore} | difficulty={currentDifficulty}");
 
+        // Set the filter BEFORE enabling the canvas so OnEnable's Refresh is already filtered
+        if (highScoreDisplay)
+            highScoreDisplay.ShowForDifficulty(currentDifficulty);
+
         if (scoreCanvas) scoreCanvas.SetActive(true);   // make sure parent is active first
         if (finalCanvas) finalCanvas.SetActive(false);
 

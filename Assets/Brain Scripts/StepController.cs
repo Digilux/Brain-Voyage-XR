@@ -91,6 +91,10 @@ public class StepController : MonoBehaviour
     [SerializeField] private TMP_Text goalNameTextOnGoalCanvas;
     [SerializeField] private TMP_Text goalNameTextOnFailCanvas;
 
+    [Header("Wrong-Touch Ignore List")]
+    [Tooltip("Objects with these tags (or a parent with these tags) never count as wrong touches, e.g. \"Ventricles\".")]
+    [SerializeField] private string[] ignoredWrongTouchTags;
+
     [Header("Attempts and Fail State")]
     [SerializeField] public int maxAttempts = 3;
     [SerializeField] private AudioClip failClip;        // your fail audio clip
@@ -292,9 +296,18 @@ public class StepController : MonoBehaviour
 
         // Controller-based wrong touch detection
         if (fingerService.TryGetControllerSelection(out GameObject hitObj, out string hitTag, out bool isLeftHand) &&
-    hitTag != requiredCommonTag)
+      hitTag != requiredCommonTag &&
+      !IsIgnoredForWrongTouch(hitObj))
         {
+            VRDebugText.Log($"CTRL WRONG: {hitObj.name} tag={hitTag}"); // TEMP
             TriggerControllerWrongTouch(hitObj, isLeftHand);
+        }
+
+        // Hand-tracking wrong touch: both index fingers on the same non-goal structure
+        if (fingerService.TryGetTwoFingerWrongSelection(requiredCommonTag, out GameObject handHit, out string handTag) &&
+            !IsIgnoredForWrongTouch(handHit))
+        {
+            TriggerControllerWrongTouch(handHit, isLeftHand: true, bothHands: true);
         }
 
         if (!requireRisingEdge)
@@ -395,6 +408,7 @@ public class StepController : MonoBehaviour
     {
         if (Time.unscaledTime < wrongTouchGraceEndTime) return;
         if (AppPaused) return;
+        if (wrongCollider && IsIgnoredForWrongTouch(wrongCollider.gameObject)) return;
         // Add IsShowingFeedback check to existing guards
         if (!stepRunning || stepCompleted) return;
         if (wrongTouchDetector && !wrongTouchDetector.IsArmed) return;
@@ -487,6 +501,15 @@ public class StepController : MonoBehaviour
     public void SetFailPenalty(int penalty)
     {
         failPenaltyPerWrongTouch = penalty;
+    }
+
+    private bool IsIgnoredForWrongTouch(GameObject go)
+    {
+        if (!go || ignoredWrongTouchTags == null) return false;
+        for (var t = go.transform; t != null; t = t.parent)
+            foreach (var tag in ignoredWrongTouchTags)
+                if (!string.IsNullOrEmpty(tag) && t.CompareTag(tag)) return true;
+        return false;
     }
 
     private bool PassesFilter(Collider other)
@@ -654,7 +677,7 @@ public class StepController : MonoBehaviour
         VRDebugText.Log(msg);
     }
 
-    private void TriggerControllerWrongTouch(GameObject wrongObject, bool isLeftHand)
+    private void TriggerControllerWrongTouch(GameObject wrongObject, bool isLeftHand, bool bothHands = false)
     {
         if (Time.unscaledTime < wrongTouchGraceEndTime) return;
         if (!stepRunning || stepCompleted) return;
@@ -672,7 +695,8 @@ public class StepController : MonoBehaviour
             voOutputSource.Stop();
             voOutputSource.PlayOneShot(wrongTouchClip);
         }
-        PlayHaptics(incorrectHapticAmplitude, incorrectHapticDuration, isLeftHand);
+        if (bothHands) PlayHaptics(incorrectHapticAmplitude, incorrectHapticDuration);
+        else PlayHaptics(incorrectHapticAmplitude, incorrectHapticDuration, isLeftHand);
 
         ScoreManager.Instance?.ApplyDelta(-failPenaltyPerWrongTouch);
 

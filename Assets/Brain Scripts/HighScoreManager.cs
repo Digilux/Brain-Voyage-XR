@@ -45,8 +45,19 @@ public class HighScoreManager : MonoBehaviour
         int index = Entries.FindIndex(e => e.score <= score);
         if (index < 0) index = Entries.Count;
         Entries.Insert(index, entry);
-        if (Entries.Count > maxEntries)
-            Entries.RemoveRange(maxEntries, Entries.Count - maxEntries);
+
+        // Trim to maxEntries within THIS difficulty only, so one mode can't push another off the board
+        int countInDifficulty = 0;
+        for (int i = 0; i < Entries.Count; i++)
+        {
+            if (Entries[i].difficulty != entry.difficulty) continue;
+            countInDifficulty++;
+            if (countInDifficulty > maxEntries)
+            {
+                Entries.RemoveAt(i);
+                i--;
+            }
+        }
 
         Save();
         OnHighScoresChanged?.Invoke();

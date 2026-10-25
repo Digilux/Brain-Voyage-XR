@@ -25,6 +25,12 @@ public class FingerContactService : MonoBehaviour
     private GameObject _lastControllerHit;
     private int _controllerStableCount;
 
+    [Tooltip("Consecutive frames both index fingers must stay on the same wrong object before it counts as a wrong selection.")]
+    public int handWrongStableFrames = 6;
+
+    private GameObject _lastHandWrongHit;
+    private int _handWrongStableCount;
+
     [Header("Geometry")]
     [Tooltip("MeshCollider(s) that the fingers can touch.")]
     public Collider[] geometryColliders;
@@ -79,6 +85,25 @@ public class FingerContactService : MonoBehaviour
 
         if (leftIndexTip) Probe(leftIndexTip.position, _leftTags);
         if (rightIndexTip) Probe(rightIndexTip.position, _rightTags);
+
+        // TEMP DEBUG — remove after testing
+        string l = "-", r = "-";
+        foreach (var kv in _leftTags) l = kv.Key.name;
+        foreach (var kv in _rightTags) r = kv.Key.name;
+
+        float dl = float.MaxValue, dr = float.MaxValue;
+        string goalName = "NOT FOUND";
+        if (!string.IsNullOrEmpty(currentGoalDebugTag) && leftIndexTip && rightIndexTip && geometryColliders != null)
+        {
+            foreach (var col in geometryColliders)
+            {
+                if (!col || col.gameObject.tag != currentGoalDebugTag) continue;
+                goalName = col.name;
+                dl = Mathf.Min(dl, Vector3.Distance(col.ClosestPoint(leftIndexTip.position), leftIndexTip.position));
+                dr = Mathf.Min(dr, Vector3.Distance(col.ClosestPoint(rightIndexTip.position), rightIndexTip.position));
+            }
+        }
+        VRDebugText.Log($"{goalName} L:{dl:0.000} R:{dr:0.000} | hit L:{l} R:{r}");
 
         if (leftControllerTip && leftTriggerAction != null)
         {
@@ -322,5 +347,42 @@ public class FingerContactService : MonoBehaviour
     {
         _lastControllerHit = null;
         _controllerStableCount = 0;
+        _lastHandWrongHit = null;
+        _handWrongStableCount = 0;
+    }
+
+    /// <summary>
+    /// True once (on the frame stability is reached) when both index fingers resolve to the same
+    /// non-goal object. Uses the same Probe results, exclusions, and priority logic as goal selection.
+    /// </summary>
+    public bool TryGetTwoFingerWrongSelection(string goalTag, out GameObject hitObject, out string hitTag)
+    {
+        hitObject = null;
+        hitTag = null;
+
+        GameObject common = null;
+        string commonTag = null;
+        foreach (var kv in _leftTags)
+        {
+            if (kv.Value == goalTag) continue;
+            if (_rightTags.ContainsKey(kv.Key)) { common = kv.Key; commonTag = kv.Value; break; }
+        }
+
+        if (common == null)
+        {
+            _lastHandWrongHit = null;
+            _handWrongStableCount = 0;
+            return false;
+        }
+
+        if (common == _lastHandWrongHit) _handWrongStableCount++;
+        else { _lastHandWrongHit = common; _handWrongStableCount = 1; }
+
+        // Fire exactly once per continuous contact
+        if (_handWrongStableCount != handWrongStableFrames) return false;
+
+        hitObject = common;
+        hitTag = commonTag;
+        return true;
     }
 }

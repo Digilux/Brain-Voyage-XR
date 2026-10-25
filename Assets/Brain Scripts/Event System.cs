@@ -18,6 +18,10 @@ using UnityEngine.Video;
     {
         [SerializeField]
         public GameObject creditsCanvas;
+        
+        [SerializeField]
+        private GameObject highScoresCanvas;
+        
         [SerializeField] 
         private GameObject mainMenuRoot;
 
@@ -230,6 +234,19 @@ using UnityEngine.Video;
     public void OnCreditsToMenuPressed()
     {
         creditsCanvas.SetActive(false);
+        mainMenuRoot.SetActive(true);
+    }
+
+    // Button action to assign in the inspector on the High Scores button
+    public void OnHighScoresButtonPressed()
+    {
+        mainMenuRoot.SetActive(false);
+        if (highScoresCanvas) highScoresCanvas.SetActive(true);
+    }
+
+    public void OnHighScoresToMenuPressed()
+    {
+        if (highScoresCanvas) highScoresCanvas.SetActive(false);
         mainMenuRoot.SetActive(true);
     }
 

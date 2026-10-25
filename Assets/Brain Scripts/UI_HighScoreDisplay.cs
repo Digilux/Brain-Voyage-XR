@@ -6,9 +6,8 @@ public class UI_HighScoreDisplay : MonoBehaviour
     [SerializeField] private TMP_Text scoresText;
     [SerializeField] private int maxEntries = 10;
 
-
-
-    private string filterDifficulty = "";  // empty = show all
+    [Tooltip("Easy / Medium / Hard. Leave empty on the end-of-game board; it's set at runtime by ShowForDifficulty.")]
+    [SerializeField] private string filterDifficulty = "";
 
     [Header("Headers")]
     [Tooltip("Header when no difficulty filter is set.")]
@@ -53,12 +52,14 @@ public class UI_HighScoreDisplay : MonoBehaviour
         ? HighScoreManager.Instance.Entries
         : new System.Collections.Generic.List<HighScoreManager.Entry>();
 
-        // If no difficulty set, show all entries as fallback
-        var entries = string.IsNullOrEmpty(filterDifficulty)
-            ? allEntries
-            : allEntries.FindAll(e => e.difficulty == filterDifficulty);
+        // Only ever show the current difficulty — never a mixed list
+        var entries = allEntries.FindAll(e => e.difficulty == filterDifficulty);
+        var header = string.IsNullOrEmpty(filterDifficulty)
+            ? "--- No difficulty set ---"
+            : $"--- {filterDifficulty} ---";
 
-        var header = string.IsNullOrEmpty(filterDifficulty) ? "--- All ---" : $"--- {filterDifficulty} ---";
+        VRDebugText.Log($"HighScore Refresh: filter='{filterDifficulty}', matches={entries.Count}");
+
         var sb = new System.Text.StringBuilder();
         sb.AppendLine(header);
 
