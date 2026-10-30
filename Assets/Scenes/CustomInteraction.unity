@@ -2798,8 +2798,7 @@ MonoBehaviour:
   goalDisplayName: Left Motor Cortex
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -9584,8 +9583,7 @@ MonoBehaviour:
   goalDisplayName: Wernicke's Area
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -12523,8 +12521,7 @@ MonoBehaviour:
   goalDisplayName: Midbrain
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -14213,8 +14210,7 @@ MonoBehaviour:
   goalDisplayName: Medulla
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -17980,8 +17976,7 @@ MonoBehaviour:
   goalDisplayName: Corpus Callosum
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -19872,8 +19867,7 @@ MonoBehaviour:
   goalDisplayName: Thalamus
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -20768,8 +20762,7 @@ MonoBehaviour:
   goalDisplayName: Left Amygdala
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -22215,8 +22208,7 @@ MonoBehaviour:
   goalDisplayName: Left Frontal Lobe
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -25654,8 +25646,7 @@ MonoBehaviour:
   goalDisplayName: Right Somatosensory Cortex
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -30532,8 +30523,7 @@ MonoBehaviour:
   goalDisplayName: Right Hippocampus
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -35534,8 +35524,7 @@ MonoBehaviour:
   goalDisplayName: Left Temporal Lobe
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -35635,8 +35624,7 @@ MonoBehaviour:
   goalDisplayName: Cerebellum
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -40377,8 +40365,7 @@ MonoBehaviour:
   goalDisplayName: Right Motor Cortex
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -41286,8 +41273,7 @@ MonoBehaviour:
   goalDisplayName: Right Frontal Lobe
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -41718,45 +41704,45 @@ MonoBehaviour:
   - step: {fileID: 1256039157}
     enabled: 1
   - step: {fileID: 1769270358}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 1574928239}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 1579142216}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 371412034}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 2071553510}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 1383626407}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 856629994}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 1751226832}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 1708353906}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 1360164933}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 476775054}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 1257264976}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 617205405}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 747584475}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 708594031}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 1414625290}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 1099364116}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 1623608690}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 501772568}
-    enabled: 0
+    enabled: 1
   - step: {fileID: 2083335681}
-    enabled: 0
+    enabled: 1
   randomizeOrder: 1
   nextGoalButtonGoalCanvas: {fileID: 1672043292}
   nextGoalButtonFailCanvas: {fileID: 583740547}
@@ -42731,8 +42717,7 @@ MonoBehaviour:
   goalDisplayName: Left Hippocampus
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -43956,8 +43941,7 @@ MonoBehaviour:
   goalDisplayName: Right Amygdala
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -46948,8 +46932,7 @@ MonoBehaviour:
   goalDisplayName: Broca's Area
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -47597,8 +47580,7 @@ MonoBehaviour:
   goalDisplayName: Left Somatosensory Cortex
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -48966,8 +48948,7 @@ MonoBehaviour:
   goalDisplayName: Hypothalamus
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -51563,8 +51544,7 @@ MonoBehaviour:
   goalDisplayName: Right Temporal Lobe
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -53618,8 +53598,7 @@ MonoBehaviour:
   goalDisplayName: Right Parietal Lobe
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -53926,8 +53905,7 @@ MonoBehaviour:
   goalDisplayName: Left Parietal Lobe
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -64480,8 +64458,7 @@ MonoBehaviour:
   goalDisplayName: Right Occipital Lobe
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -64802,8 +64779,7 @@ MonoBehaviour:
   goalDisplayName: Pons
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
@@ -65569,7 +65545,6 @@ MonoBehaviour:
   - {fileID: 6806631392657057182}
   - {fileID: 8440855846277310897}
   - {fileID: 510511648}
-  - {fileID: 7515984672081973844}
   currentGoalDebugTag: BrocasArea
   leftIndexTip: {fileID: 87955841}
   rightIndexTip: {fileID: 1774634828}
@@ -82064,8 +82039,7 @@ MonoBehaviour:
   goalDisplayName: Left Occipital Lobe
   goalNameTextOnGoalCanvas: {fileID: 1061833602}
   goalNameTextOnFailCanvas: {fileID: 1897014857}
-  ignoredWrongTouchTags:
-  - Ventricles
+  ignoredWrongTouchTags: []
   maxAttempts: 3
   failClip: {fileID: 8300000, guid: c9eec0299c985fb48a652ee4dfa21de1, type: 3}
   wrongTouchClip: {fileID: 8300000, guid: 4ce5bfebb16cffd4da553384f0cee9f1, type: 3}
